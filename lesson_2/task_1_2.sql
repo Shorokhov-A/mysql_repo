@@ -1,0 +1,7 @@
+CREATE DATABASE IF NOT EXISTS example;
+DROP TABLE IF EXISTS example.users;
+CREATE TABLE example.users (
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(255)
+	);
+	
