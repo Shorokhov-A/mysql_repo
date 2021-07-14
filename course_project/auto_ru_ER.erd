@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="1">
+	<entities>
+		<data-source id="mysql8-179a97173a5-31e37af3d95ae5f8">
+			<entity id="1" name="ads" fq-name="auto_ru.ads">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="2" name="media" fq-name="auto_ru.media">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="3" name="messages" fq-name="auto_ru.messages">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="4" name="photo_albums" fq-name="auto_ru.photo_albums">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="5" name="photos" fq-name="auto_ru.photos">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="6" name="profiles" fq-name="auto_ru.profiles">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="7" name="reviews" fq-name="auto_ru.reviews">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="8" name="users" fq-name="auto_ru.users">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="9" name="vehicle_brands" fq-name="auto_ru.vehicle_brands">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="10" name="vehicle_characteristic_values" fq-name="auto_ru.vehicle_characteristic_values">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="11" name="vehicle_characteristics" fq-name="auto_ru.vehicle_characteristics">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="12" name="vehicle_equipments" fq-name="auto_ru.vehicle_equipments">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="13" name="vehicle_generations" fq-name="auto_ru.vehicle_generations">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="14" name="vehicle_models" fq-name="auto_ru.vehicle_models">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="15" name="vehicle_modifications" fq-name="auto_ru.vehicle_modifications">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="16" name="vehicle_option_values" fq-name="auto_ru.vehicle_option_values">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="17" name="vehicle_options" fq-name="auto_ru.vehicle_options">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="18" name="vehicle_series" fq-name="auto_ru.vehicle_series">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="19" name="vehicles" fq-name="auto_ru.vehicles">
+				<path name="auto_ru"/>
+			</entity>
+			<entity id="20" name="vehicles_category" fq-name="auto_ru.vehicles_category">
+				<path name="auto_ru"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="photos_ibfk_2" fq-name="auto_ru.photos.photos_ibfk_2" type="fk" pk-ref="2" fk-ref="5"/>
+		<relation name="profiles_ibfk_2" fq-name="auto_ru.profiles.profiles_ibfk_2" type="fk" pk-ref="2" fk-ref="6"/>
+		<relation name="ads_ibfk_6" fq-name="auto_ru.ads.ads_ibfk_6" type="fk" pk-ref="4" fk-ref="1"/>
+		<relation name="photos_ibfk_1" fq-name="auto_ru.photos.photos_ibfk_1" type="fk" pk-ref="4" fk-ref="5"/>
+		<relation name="reviews_ibfk_2" fq-name="auto_ru.reviews.reviews_ibfk_2" type="fk" pk-ref="4" fk-ref="7"/>
+		<relation name="ads_ibfk_1" fq-name="auto_ru.ads.ads_ibfk_1" type="fk" pk-ref="8" fk-ref="1"/>
+		<relation name="media_ibfk_1" fq-name="auto_ru.media.media_ibfk_1" type="fk" pk-ref="8" fk-ref="2"/>
+		<relation name="messages_ibfk_1" fq-name="auto_ru.messages.messages_ibfk_1" type="fk" pk-ref="8" fk-ref="3"/>
+		<relation name="messages_ibfk_2" fq-name="auto_ru.messages.messages_ibfk_2" type="fk" pk-ref="8" fk-ref="3"/>
+		<relation name="photo_albums_ibfk_1" fq-name="auto_ru.photo_albums.photo_albums_ibfk_1" type="fk" pk-ref="8" fk-ref="4"/>
+		<relation name="profiles_ibfk_1" fq-name="auto_ru.profiles.profiles_ibfk_1" type="fk" pk-ref="8" fk-ref="6"/>
+		<relation name="reviews_ibfk_1" fq-name="auto_ru.reviews.reviews_ibfk_1" type="fk" pk-ref="8" fk-ref="7"/>
+		<relation name="ads_ibfk_4" fq-name="auto_ru.ads.ads_ibfk_4" type="fk" pk-ref="9" fk-ref="1"/>
+		<relation name="reviews_ibfk_5" fq-name="auto_ru.reviews.reviews_ibfk_5" type="fk" pk-ref="9" fk-ref="7"/>
+		<relation name="vehicle_models_ibfk_1" fq-name="auto_ru.vehicle_models.vehicle_models_ibfk_1" type="fk" pk-ref="9" fk-ref="14"/>
+		<relation name="vehicle_characteristic_values_ibfk_1" fq-name="auto_ru.vehicle_characteristic_values.vehicle_characteristic_values_ibfk_1" type="fk" pk-ref="11" fk-ref="10"/>
+		<relation name="vehicle_options_ibfk_1" fq-name="auto_ru.vehicle_options.vehicle_options_ibfk_1" type="fk" pk-ref="12" fk-ref="17"/>
+		<relation name="reviews_ibfk_7" fq-name="auto_ru.reviews.reviews_ibfk_7" type="fk" pk-ref="13" fk-ref="7"/>
+		<relation name="vehicle_series_ibfk_1" fq-name="auto_ru.vehicle_series.vehicle_series_ibfk_1" type="fk" pk-ref="13" fk-ref="18"/>
+		<relation name="ads_ibfk_5" fq-name="auto_ru.ads.ads_ibfk_5" type="fk" pk-ref="14" fk-ref="1"/>
+		<relation name="reviews_ibfk_6" fq-name="auto_ru.reviews.reviews_ibfk_6" type="fk" pk-ref="14" fk-ref="7"/>
+		<relation name="vehicle_characteristics_ibfk_2" fq-name="auto_ru.vehicle_characteristics.vehicle_characteristics_ibfk_2" type="fk" pk-ref="14" fk-ref="11"/>
+		<relation name="vehicle_generations_ibfk_1" fq-name="auto_ru.vehicle_generations.vehicle_generations_ibfk_1" type="fk" pk-ref="14" fk-ref="13"/>
+		<relation name="vehicle_options_ibfk_2" fq-name="auto_ru.vehicle_options.vehicle_options_ibfk_2" type="fk" pk-ref="14" fk-ref="17"/>
+		<relation name="vehicle_series_ibfk_2" fq-name="auto_ru.vehicle_series.vehicle_series_ibfk_2" type="fk" pk-ref="14" fk-ref="18"/>
+		<relation name="reviews_ibfk_9" fq-name="auto_ru.reviews.reviews_ibfk_9" type="fk" pk-ref="15" fk-ref="7"/>
+		<relation name="vehicle_characteristics_ibfk_1" fq-name="auto_ru.vehicle_characteristics.vehicle_characteristics_ibfk_1" type="fk" pk-ref="15" fk-ref="11"/>
+		<relation name="vehicle_equipments_ibfk_1" fq-name="auto_ru.vehicle_equipments.vehicle_equipments_ibfk_1" type="fk" pk-ref="15" fk-ref="12"/>
+		<relation name="vehicle_option_values_ibfk_1" fq-name="auto_ru.vehicle_option_values.vehicle_option_values_ibfk_1" type="fk" pk-ref="17" fk-ref="16"/>
+		<relation name="reviews_ibfk_8" fq-name="auto_ru.reviews.reviews_ibfk_8" type="fk" pk-ref="18" fk-ref="7"/>
+		<relation name="vehicle_modifications_ibfk_1" fq-name="auto_ru.vehicle_modifications.vehicle_modifications_ibfk_1" type="fk" pk-ref="18" fk-ref="15"/>
+		<relation name="ads_ibfk_2" fq-name="auto_ru.ads.ads_ibfk_2" type="fk" pk-ref="19" fk-ref="1"/>
+		<relation name="reviews_ibfk_3" fq-name="auto_ru.reviews.reviews_ibfk_3" type="fk" pk-ref="19" fk-ref="7"/>
+		<relation name="vehicle_brands_ibfk_1" fq-name="auto_ru.vehicle_brands.vehicle_brands_ibfk_1" type="fk" pk-ref="19" fk-ref="9"/>
+		<relation name="vehicles_category_ibfk_1" fq-name="auto_ru.vehicles_category.vehicles_category_ibfk_1" type="fk" pk-ref="19" fk-ref="20"/>
+		<relation name="ads_ibfk_3" fq-name="auto_ru.ads.ads_ibfk_3" type="fk" pk-ref="20" fk-ref="1"/>
+		<relation name="reviews_ibfk_4" fq-name="auto_ru.reviews.reviews_ibfk_4" type="fk" pk-ref="20" fk-ref="7"/>
+		<relation name="vehicle_brands_ibfk_2" fq-name="auto_ru.vehicle_brands.vehicle_brands_ibfk_2" type="fk" pk-ref="20" fk-ref="9"/>
+	</relations>
+</diagram>
